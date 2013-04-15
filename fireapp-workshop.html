@@ -1,0 +1,561 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    margin: 10px 13px 10px 13px;
+}
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+@media screen and (min-width: 768px) {
+    body {
+        width: 748px;
+        margin:10px auto;
+    }
+}
+</style>
+<title>Fire.app Workshop</title>
+
+</head>
+<body>
+<h1>Fire.app Workshop</h1>
+
+<h3><code>p.5</code> Fire.app?</h3>
+
+<p>Fire.app 使用說明：</p>
+
+<p><a href="https://github.com/handlino/FireApp/wiki/Fire.app-%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E">https://github.com/handlino/FireApp/wiki/Fire.app-使用說明</a></p>
+
+<h3><code>p.6</code> Fire.app 選單介紹</h3>
+
+<p>Extendsion 使用範例：</p>
+
+<p><a href="https://github.com/handlino/compass-handlino">https://github.com/handlino/compass-handlino</a></p>
+
+<h3><code>p.12</code> Fire.app 建立新專案</h3>
+
+<ul>
+<li>blueprint
+
+<ul>
+<li><a href="http://www.blueprintcss.org/">http://www.blueprintcss.org/</a></li>
+<li><a href="http://compass-style.org/help/tutorials/blueprint/">http://compass-style.org/help/tutorials/blueprint/</a></li>
+</ul>
+</li>
+<li>compass
+
+<ul>
+<li><a href="http://compass-style.org/">http://compass-style.org/</a></li>
+</ul>
+</li>
+<li>960
+
+<ul>
+<li><a href="http://960.gs/">http://960.gs/</a></li>
+<li><a href="https://github.com/nextmat/compass-960-plugin">https://github.com/nextmat/compass-960-plugin</a></li>
+</ul>
+</li>
+<li>html5-boilerplate
+
+<ul>
+<li><a href="http://html5boilerplate.com/">http://html5boilerplate.com/</a></li>
+<li><a href="https://github.com/heygrady/html5-boilerplate">https://github.com/heygrady/html5-boilerplate</a></li>
+</ul>
+</li>
+<li>compass-h5bp
+
+<ul>
+<li><a href="http://html5boilerplate.com/">http://html5boilerplate.com/</a></li>
+<li><a href="https://github.com/sporkd/compass-h5bp">https://github.com/sporkd/compass-h5bp</a></li>
+</ul>
+</li>
+<li>bootstrap
+
+<ul>
+<li><a href="http://twitter.github.com/bootstrap/">http://twitter.github.com/bootstrap/</a></li>
+<li><a href="https://github.com/thomas-mcdonald/bootstrap-sass">https://github.com/thomas-mcdonald/bootstrap-sass</a></li>
+</ul>
+</li>
+<li>susy
+
+<ul>
+<li><a href="http://susy.oddbird.net/">http://susy.oddbird.net/</a></li>
+</ul>
+</li>
+<li>foundation
+
+<ul>
+<li><a href="http://foundation.zurb.com/">http://foundation.zurb.com/</a></li>
+<li><a href="https://github.com/zurb/foundation">https://github.com/zurb/foundation</a></li>
+</ul>
+</li>
+<li>Fireapp Example
+
+<ul>
+<li><a href="https://github.com/handlino/fire-app-sample-project">https://github.com/handlino/fire-app-sample-project</a></li>
+</ul>
+</li>
+</ul>
+
+
+<h3><code>p.19</code> 確認頁面狀態</h3>
+
+<p>在剛建立的專案根目錄建立檔案 <code>index.html</code></p>
+
+<h4>index.html</h4>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Fire.app Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello world!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3><code>p.36</code> Try ERB</h3>
+
+<p>在專案資料夾中建立新檔案 screenshots.html.erb</p>
+
+<h4>screenshots.html.erb</h4>
+
+<pre><code>&lt;%= 2+2 %&gt;
+</code></pre>
+
+<p><a href="http://127.0.0.1:24681/screenshots.html">http://127.0.0.1:24681/screenshots.html</a></p>
+
+<h3><code>p.37</code> Template helper</h3>
+
+<p>Template helper 文件：</p>
+
+<ul>
+<li><a href="https://github.com/handlino/FireApp/wiki/Template-Helpers-%28zh-tw%29">https://github.com/handlino/FireApp/wiki/Template-Helpers-%28zh-tw%29</a></li>
+</ul>
+
+
+<h3><code>p.45</code> 變更假資料產生方式</h3>
+
+<p>先在 <code>&lt;/body&gt;</code> 前加上產生 LiveReload 的 helper ，重新整理一次使其生效</p>
+
+<h4>screenshots.html.erb</h4>
+
+<pre><code>&lt;%= livereload_js %&gt;
+</code></pre>
+
+<p>變更 header 中的 h2 內容</p>
+
+<h4>screenshots.html.erb</h4>
+
+<pre><code>&lt;h2&gt;&lt;%= lorem_sentence %&gt;&lt;/h2&gt;
+</code></pre>
+
+<p>把五則「操作畫面」的敘述刪掉四則只留下一則</p>
+
+<h4>screenshots.html.erb</h4>
+
+<pre><code>  &lt;h2&gt;操作畫面&lt;/h2&gt;
+  &lt;p&gt;&lt;img src="http://placehold.it/640x360" /&gt;&lt;/p&gt;
+  &lt;p&gt;操作畫面說明操作畫面說明操作畫面說明操作畫面說明操作畫面...&lt;/p&gt;
+</code></pre>
+
+<h3><code>p.46</code> 變更假資料產生方式</h3>
+
+<p>將「操作畫面」的敘述用產生假資料helper 替換如下</p>
+
+<h4>screenshots.html.erb</h4>
+
+<pre><code>&lt;h2&gt;&lt;%= zh_lorem_words(4+rand(4)) %&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src="&lt;%= lorem_image("640x360") %&gt;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;%= zh_lorem_paragraph %&gt;&lt;/p&gt;
+</code></pre>
+
+<h3><code>p.47</code> 變更假資料產生方式</h3>
+
+<p>利用 times 包圍使該段落複製五次</p>
+
+<h4>screenshots.html.erb</h4>
+
+<pre><code>&lt;% 5.times do %&gt;
+&lt;h2&gt;&lt;%= zh_lorem_words(4+rand(4)) %&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src="&lt;%= lorem_image("640x360") %&gt;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;%= zh_lorem_paragraph %&gt;&lt;/p&gt;
+&lt;% end %&gt;
+</code></pre>
+
+<p>用教材中的內容替換掉頁面中原有的 <code>&lt;div class="links"&gt;</code> 和 <code>&lt;div class="footer"&gt;</code> 的部分</p>
+
+<h4>screenshots.html.erb <code>div.links</code></h4>
+
+<pre><code>  &lt;div class="links"&gt;
+    &lt;h2&gt;相關資訊連結&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;% 8.times do %&gt;
+      &lt;li&gt;&lt;a href="#"&gt;&lt;%= zh_lorem_words (5+rand(4)) %&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;% end %&gt;
+    &lt;/ul&gt;  
+  &lt;/div&gt;
+</code></pre>
+
+<h4>screenshots.html.erb <code>div.footer</code></h4>
+
+<pre><code>&lt;div class="footer"&gt;
+  &lt;%= lorem_sentence %&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3><code>p.56</code> 使用 layout</h3>
+
+<p>把 <code>&lt;div class="main"&gt;</code> 中的內容全數刪除，替換成 <code>&lt;%= yield %&gt;</code></p>
+
+<h4>_layout.html.erb</h4>
+
+<pre><code>&lt;div class="main"&gt;
+  &lt;%= yield %&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3><code>p.57</code> 使用 layout</h3>
+
+<h4>screenshots.html.erb</h4>
+
+<pre><code>&lt;% 5.times do %&gt;
+&lt;h2&gt;&lt;%= zh_lorem_words(4+rand(4)) %&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src="&lt;%= lorem_image("640x360") %&gt;" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;%= zh_lorem_paragraph %&gt;&lt;/p&gt;
+&lt;% end %&gt;
+</code></pre>
+
+<h3><code>p.63</code> Partial</h3>
+
+<p>首先將 header-wrapper 部分抽出為 partial</p>
+
+<h4>_header.html.erb</h4>
+
+<pre><code>&lt;div class="header-wrapper"&gt;
+  &lt;div class="header"&gt;
+    &lt;h1 class="logo"&gt;&lt;a href="index.html"&gt;Fire.app&lt;/a&gt;&lt;/h1&gt;
+    &lt;h2&gt;&lt;%= lorem_sentence %&gt;&lt;/h2&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4>_layout.html.erb</h4>
+
+<pre><code>&lt;%= render :partial =&gt; "header" %&gt;
+</code></pre>
+
+<h3><code>p.64</code> Partial</h3>
+
+<p>在 <code>_layout.html.erb</code> 中將 <code>head</code> 、 <code>main-menu</code> 和 <code>footer-wrapper</code> 部分都修改成載入已經準備好的 partial 檔案</p>
+
+<h4>_layout.html.erb</h4>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;%= render :partial =&gt; "head" %&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;%= render :partial =&gt; "header" %&gt;
+  &lt;%= render :partial =&gt; "main_menu" %&gt;
+  &lt;div class="main-block"&gt;
+    &lt;div class="main"&gt;
+      &lt;%= yield %&gt;
+    &lt;/div&gt;
+    &lt;div class="side"&gt;
+      &lt;div class="ad"&gt;
+        側欄宣傳文字
+      &lt;/div&gt;
+      &lt;div class="links"&gt;
+        &lt;h2&gt;相關資訊連結&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;% 8.times do %&gt;
+          &lt;li&gt;&lt;a href="#"&gt;&lt;%= zh_lorem_words (5+rand(4)) %&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;% end %&gt;
+        &lt;/ul&gt;  
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;%= render :partial =&gt; "footer" %&gt;
+  &lt;%= livereload_js %&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3><code>p.66</code> 指定非預設的 layout 檔案</h3>
+
+<h4>_index_layout.html.erb</h4>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;%= render :partial =&gt; "head" %&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;%= render :partial =&gt; "header" %&gt;
+  &lt;%= render :partial =&gt; "main_menu" %&gt;
+  &lt;div class="main-block"&gt;
+    &lt;%= yield %&gt;
+  &lt;/div&gt;
+  &lt;%= render :partial =&gt; "footer" %&gt;
+  &lt;%= livereload_js %&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3><code>p.67</code> 指定非預設的 layout 檔案</h3>
+
+<p>指定欲使用的 layout 檔案。</p>
+
+<h4>index.html.layout</h4>
+
+<pre><code>_index_layout.html.erb
+</code></pre>
+
+<h3><code>p.71</code> content_for</h3>
+
+<p>修改 <code>_layout.html.erb</code> 中 <code>&lt;div class="ad"&gt;</code> 部分的內容</p>
+
+<h4>_layout.html.erb</h4>
+
+<pre><code>&lt;div class="ad"&gt;
+  &lt;% if content_for? :sp_ad %&gt;
+    &lt;%= yield :sp_ad %&gt;
+  &lt;% else %&gt;
+    側欄宣傳文字
+  &lt;% end %&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3><code>p.72</code> content_for</h3>
+
+<p>在 documents.html.erb 中加上</p>
+
+<h4>documents.html.erb</h4>
+
+<pre><code>&lt;% content_for :sp_ad do %&gt;
+  需要教育訓練？&lt;br /&gt;
+  請來信：&lt;br /&gt;
+  &lt;a href="#"&gt;&lt;%= lorem_email %&gt;&lt;/a&gt;
+&lt;% end %&gt;
+</code></pre>
+
+<h3><code>p.75</code> Sass</h3>
+
+<ul>
+<li><a href="http://sass-lang.com/">http://sass-lang.com/</a></li>
+<li><a href="http://www.codeschool.com/paths/html-css#sass">http://www.codeschool.com/paths/html-css#sass</a></li>
+</ul>
+
+
+<h3><code>p.83</code> 更換 SCSS</h3>
+
+<p>修改檔案 _head.html.erb ，將原本載入 css 的兩行程式碼換成</p>
+
+<h4>_head.html.erb</h4>
+
+<pre><code>&lt;link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" /&gt;
+</code></pre>
+
+<h3><code>p.85</code> 插播介紹 - normalize.css</h3>
+
+<ul>
+<li><a href="http://necolas.github.com/normalize.css/">http://necolas.github.com/normalize.css/</a></li>
+</ul>
+
+
+<h3><code>p.86</code> 插播介紹 - normalize.css</h3>
+
+<p>開啟 screen.scss ，在第一行加入</p>
+
+<h4>screen.scss</h4>
+
+<pre><code>@import "normalize";
+</code></pre>
+
+<h3><code>p.89</code> Compass</h3>
+
+<ul>
+<li><a href="http://compass-style.org/">http://compass-style.org/</a></li>
+</ul>
+
+
+<p>在 <code>screen.scss</code> import normalize 的下一行加上：</p>
+
+<h4>screen.scss</h4>
+
+<pre><code>@import "compass";
+</code></pre>
+
+<h3><code>p.91</code> 使用 logo 圖片取代文字</h3>
+
+<p>Compass Text Replacement</p>
+
+<ul>
+<li><a href="http://compass-style.org/reference/compass/utilities/text/replacement/">http://compass-style.org/reference/compass/utilities/text/replacement/</a></li>
+</ul>
+
+
+<h3><code>p.94</code> Background Gradients</h3>
+
+<p>Compass Background Gradients</p>
+
+<ul>
+<li><a href="http://compass-style.org/reference/compass/css3/images/">http://compass-style.org/reference/compass/css3/images/</a></li>
+<li><a href="http://compass-style.org/examples/compass/css3/gradient/">http://compass-style.org/examples/compass/css3/gradient/</a></li>
+</ul>
+
+
+<h3><code>p.97</code> Sprites</h3>
+
+<ul>
+<li><a href="http://compass-style.org/reference/compass/helpers/sprites/">http://compass-style.org/reference/compass/helpers/sprites/</a></li>
+<li><a href="http://compass-style.org/help/tutorials/spriting/">http://compass-style.org/help/tutorials/spriting/</a></li>
+</ul>
+
+
+<h3><code>p.103</code> 網站修改</h3>
+
+<p>開啟 <code>_header.html.erb</code> ，將 <code>h1</code> 連結的內容改成 Water.app</p>
+
+<pre><code>&lt;div class="header-wrapper"&gt;
+  &lt;div class="header"&gt;
+    &lt;h1 class="logo"&gt;&lt;a href="index.html"&gt;Water.app&lt;/a&gt;&lt;/h1&gt;
+    &lt;h2&gt;&lt;%= lorem_sentence %&gt;&lt;/h2&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3><code>p.104</code> 網站修改</h3>
+
+<p>開啟 <code>screen.scss</code>，將 logo 原本指定的圖片換成 <code>waterapp-logo.png</code></p>
+
+<pre><code>h1.logo {
+  margin: 0;
+  a {
+    display: block;
+    @include replace-text-with-dimensions("waterapp-logo.png");
+  }
+}
+</code></pre>
+
+<h3><code>p.105</code> 網站修改</h3>
+
+<p>將 <code>screen.scss</code> 設定的主色調變數 <code>$main-color</code> 直接 invert 成它的對比色</p>
+
+<pre><code>$main-color: invert(#ff7711);
+</code></pre>
+</body>
+</html>

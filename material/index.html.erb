@@ -1,0 +1,14 @@
+<div class="sp-block">
+  <h2><%= zh_lorem_sentence %></h2>
+  <p><%= zh_lorem_paragraph %></p>
+</div>
+<div class="index-list">
+  <ul>
+    <% 6.times do %>
+    <li>
+      <h3><%= zh_lorem_words(5+rand(5)) %></h3>
+      <p><%= zh_lorem_sentences 6 %></p>
+    </li>
+    <% end %>
+  </ul>
+</div>
