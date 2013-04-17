@@ -141,7 +141,7 @@ pre code {
 
 <p><a href="https://github.com/handlino/compass-handlino">https://github.com/handlino/compass-handlino</a></p>
 
-<h3><code>p.12</code> Fire.app 建立新專案</h3>
+<h3><code>p.11</code> Fire.app 建立新專案</h3>
 
 <ul>
 <li>blueprint
@@ -245,7 +245,7 @@ pre code {
 </ul>
 
 
-<h3><code>p.45</code> 變更假資料產生方式</h3>
+<h3><code>p.46</code> 變更假資料產生方式</h3>
 
 <p>先在 <code>&lt;/body&gt;</code> 前加上產生 LiveReload 的 helper ，重新整理一次使其生效</p>
 
@@ -270,7 +270,7 @@ pre code {
   &lt;p&gt;操作畫面說明操作畫面說明操作畫面說明操作畫面說明操作畫面...&lt;/p&gt;
 </code></pre>
 
-<h3><code>p.46</code> 變更假資料產生方式</h3>
+<h3><code>p.47</code> 變更假資料產生方式</h3>
 
 <p>將「操作畫面」的敘述用產生假資料helper 替換如下</p>
 
@@ -281,7 +281,7 @@ pre code {
 &lt;p&gt;&lt;%= zh_lorem_paragraph %&gt;&lt;/p&gt;
 </code></pre>
 
-<h3><code>p.47</code> 變更假資料產生方式</h3>
+<h3><code>p.48</code> 變更假資料產生方式</h3>
 
 <p>利用 times 包圍使該段落複製五次</p>
 
@@ -315,7 +315,7 @@ pre code {
 &lt;/div&gt;
 </code></pre>
 
-<h3><code>p.56</code> 使用 layout</h3>
+<h3><code>p.57</code> 使用 layout</h3>
 
 <p>把 <code>&lt;div class="main"&gt;</code> 中的內容全數刪除，替換成 <code>&lt;%= yield %&gt;</code></p>
 
@@ -326,18 +326,18 @@ pre code {
 &lt;/div&gt;
 </code></pre>
 
-<h3><code>p.57</code> 使用 layout</h3>
+<h3><code>p.58</code> 使用 layout</h3>
 
 <h4>screenshots.html.erb</h4>
 
 <pre><code>&lt;% 5.times do %&gt;
-&lt;h2&gt;&lt;%= zh_lorem_words(4+rand(4)) %&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src="&lt;%= lorem_image("640x360") %&gt;" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;%= zh_lorem_paragraph %&gt;&lt;/p&gt;
+  &lt;h2&gt;&lt;%= zh_lorem_words(4+rand(4)) %&gt;&lt;/h2&gt;
+  &lt;p&gt;&lt;img src="&lt;%= lorem_image("640x360") %&gt;" /&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;%= zh_lorem_paragraph %&gt;&lt;/p&gt;
 &lt;% end %&gt;
 </code></pre>
 
-<h3><code>p.63</code> Partial</h3>
+<h3><code>p.64</code> Partial</h3>
 
 <p>首先將 header-wrapper 部分抽出為 partial</p>
 
@@ -356,7 +356,7 @@ pre code {
 <pre><code>&lt;%= render :partial =&gt; "header" %&gt;
 </code></pre>
 
-<h3><code>p.64</code> Partial</h3>
+<h3><code>p.65</code> Partial</h3>
 
 <p>在 <code>_layout.html.erb</code> 中將 <code>head</code> 、 <code>main-menu</code> 和 <code>footer-wrapper</code> 部分都修改成載入已經準備好的 partial 檔案</p>
 
@@ -394,9 +394,9 @@ pre code {
 &lt;/html&gt;
 </code></pre>
 
-<h3><code>p.66</code> 指定非預設的 layout 檔案</h3>
+<h3><code>p.67</code> 指定非預設的 layout 檔案</h3>
 
-<h4>_index_layout.html.erb</h4>
+<h4>_sp_layout.html.erb</h4>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -415,16 +415,16 @@ pre code {
 &lt;/html&gt;
 </code></pre>
 
-<h3><code>p.67</code> 指定非預設的 layout 檔案</h3>
+<h3><code>p.68</code> 指定非預設的 layout 檔案</h3>
 
 <p>指定欲使用的 layout 檔案。</p>
 
 <h4>index.html.layout</h4>
 
-<pre><code>_index_layout.html.erb
+<pre><code>_sp_layout.html.erb
 </code></pre>
 
-<h3><code>p.71</code> content_for</h3>
+<h3><code>p.72</code> content_for</h3>
 
 <p>修改 <code>_layout.html.erb</code> 中 <code>&lt;div class="ad"&gt;</code> 部分的內容</p>
 
@@ -439,7 +439,7 @@ pre code {
 &lt;/div&gt;
 </code></pre>
 
-<h3><code>p.72</code> content_for</h3>
+<h3><code>p.73</code> content_for</h3>
 
 <p>在 documents.html.erb 中加上</p>
 
@@ -452,7 +452,7 @@ pre code {
 &lt;% end %&gt;
 </code></pre>
 
-<h3><code>p.75</code> Sass</h3>
+<h3><code>p.76</code> Sass</h3>
 
 <ul>
 <li><a href="http://sass-lang.com/">http://sass-lang.com/</a></li>
@@ -460,7 +460,14 @@ pre code {
 </ul>
 
 
-<h3><code>p.83</code> 更換 SCSS</h3>
+<h3><code>p.83</code> Sass 基礎 - 顏色調整 function</h3>
+
+<ul>
+<li><a href="http://sassme.arc90.com/">http://sassme.arc90.com/</a></li>
+</ul>
+
+
+<h3><code>p.84</code> 更換 SCSS</h3>
 
 <p>修改檔案 _head.html.erb ，將原本載入 css 的兩行程式碼換成</p>
 
@@ -469,14 +476,14 @@ pre code {
 <pre><code>&lt;link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" /&gt;
 </code></pre>
 
-<h3><code>p.85</code> 插播介紹 - normalize.css</h3>
+<h3><code>p.86</code> 插播介紹 - normalize.css</h3>
 
 <ul>
 <li><a href="http://necolas.github.com/normalize.css/">http://necolas.github.com/normalize.css/</a></li>
 </ul>
 
 
-<h3><code>p.86</code> 插播介紹 - normalize.css</h3>
+<h3><code>p.87</code> 插播介紹 - normalize.css</h3>
 
 <p>開啟 screen.scss ，在第一行加入</p>
 
@@ -485,7 +492,7 @@ pre code {
 <pre><code>@import "normalize";
 </code></pre>
 
-<h3><code>p.89</code> Compass</h3>
+<h3><code>p.90</code> Compass</h3>
 
 <ul>
 <li><a href="http://compass-style.org/">http://compass-style.org/</a></li>
@@ -499,7 +506,7 @@ pre code {
 <pre><code>@import "compass";
 </code></pre>
 
-<h3><code>p.91</code> 使用 logo 圖片取代文字</h3>
+<h3><code>p.92</code> 使用 logo 圖片取代文字</h3>
 
 <p>Compass Text Replacement</p>
 
@@ -508,7 +515,7 @@ pre code {
 </ul>
 
 
-<h3><code>p.94</code> Background Gradients</h3>
+<h3><code>p.95</code> Background Gradients</h3>
 
 <p>Compass Background Gradients</p>
 
@@ -518,7 +525,7 @@ pre code {
 </ul>
 
 
-<h3><code>p.97</code> Sprites</h3>
+<h3><code>p.98</code> Sprites</h3>
 
 <ul>
 <li><a href="http://compass-style.org/reference/compass/helpers/sprites/">http://compass-style.org/reference/compass/helpers/sprites/</a></li>
@@ -526,7 +533,7 @@ pre code {
 </ul>
 
 
-<h3><code>p.103</code> 網站修改</h3>
+<h3><code>p.104</code> 網站修改</h3>
 
 <p>開啟 <code>_header.html.erb</code> ，將 <code>h1</code> 連結的內容改成 Water.app</p>
 
@@ -538,7 +545,7 @@ pre code {
 &lt;/div&gt;
 </code></pre>
 
-<h3><code>p.104</code> 網站修改</h3>
+<h3><code>p.105</code> 網站修改</h3>
 
 <p>開啟 <code>screen.scss</code>，將 logo 原本指定的圖片換成 <code>waterapp-logo.png</code></p>
 
@@ -551,7 +558,7 @@ pre code {
 }
 </code></pre>
 
-<h3><code>p.105</code> 網站修改</h3>
+<h3><code>p.107</code> 網站修改</h3>
 
 <p>將 <code>screen.scss</code> 設定的主色調變數 <code>$main-color</code> 直接 invert 成它的對比色</p>
 
